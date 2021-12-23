@@ -1,4 +1,4 @@
- let cantidadHog = prompt("Ingrese la cantidad de Hogazas que desea")
+let cantidadHog = prompt("Ingrese la cantidad de Hogazas que desea")
 let cantidadMint = prompt("Ingrese la cantidad de Panes de molde integrales que desea")
 let cantidadMbl = prompt("Ingrese la cantidad de Panes de molde blancos que desea")
 
