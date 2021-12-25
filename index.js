@@ -4,31 +4,33 @@ var cantidadMbl = 0
 var totalHog = 0
 var totalMint = 0
 var totalMbl = 0
-let precioHog = 300
-let precioMint = 310
-let precioMbl = 240
+var check = "Si"
 
-function ingreso() {
+function hogaza() {
     var cantidadHog = prompt("Cuantas hogazas desea?")
-    var cantidadMint = prompt("Cuantos panes de molde integral desea?")
-    var cantidadMbl = prompt("Cuantas panes de molde blancos desea?")
+    return totalHog = cantidadHog * 300
 }
 
-function totales() {
-    let totalHog = cantidadHog * precioHog
-    let totalMint = cantidadMint * precioMint
-    let totalMbl = cantidadMbl * precioMbls
+function mBl() {
+    var cantidadMbl = prompt("Cuantos Moldes de pan blanco desea?")
+    return totalMbl = cantidadMbl * 240
 }
 
+function mInt() {
+    var cantidadMint = prompt("Cuantos molde de pan integral desea?")
+    return totalMint = cantidadMint * 310
+}
 alert("Bienvenido al cotizador del Negro Holandes!")
 
-ingreso()
+while (check === "Si") {
+    hogaza()
+    mBl()
+    mInt()
+    var check = prompt("Si desea corregir alguna cantidad ingrese Si")
+}
 
-totales()
+let total = totalHog + totalMbl + totalMint
 
-let total = totalHog + totalMint + totalMbl
-
-alert("Su total es " + total + " " + "pesos")
+alert("Su total es  $" + total)
 
 alert("Muchas gracias!")
-location.reload()
