@@ -40,19 +40,17 @@ function barra(){
     return TotalBarra = CantidadBarra * Producto5.precio
 }
 
-alert("Bienvenido al cotizador del Negro Holandés!")
-
-while (check === "Si") {
+function cotizar(){
+    alert("Bienvenido al cotizador del Negro Holandés!")
     mInt()
     mBl()
     hog()
     hogInt()
     barra()
-    var check = prompt("Si desea corregir alguna cantidad ingrese Si")
+
+    let total = TotalHog + TotalMbl + TotalMint + TotalHogInt + TotalBarra
+
+    alert("Su total es $" + total)
+
+    alert("Muchas gracias!")
 }
-
-let total = TotalHog + TotalMbl + TotalMint + TotalHogInt + TotalBarra
-
-alert("Su total es $" + total)
-
-alert("Muchas gracias!")
