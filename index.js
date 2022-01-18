@@ -1,12 +1,3 @@
-class Producto{
-    constructor(nombre, peso, precio, masamadre){
-    this.nombre = nombre;
-    this.peso = peso;
-    this.precio = precio;
-    this.masamadre = masamadre;
-    }
-}
-
 const Producto1 = new Producto("Pan de molde integral", 950, 340, "No")
 const Producto2 = new Producto("Pan de molde blanco", 950, 265, "No")
 const Producto3 = new Producto("Hogaza", 750, 330, "Si")
