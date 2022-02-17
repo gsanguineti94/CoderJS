@@ -1,0 +1,39 @@
+        <!---------PRODUCT--------->
+        <article class="product">
+            <div class="img-container">
+                <img src="Productos\mbl.jpg" alt="Molde blanco" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Pan de molde blanco</h3>
+            <h4>$270</h4>
+        </article>
+        <!---------PRODUCT--------->
+        <!---------PRODUCT--------->
+        <article class="product">
+            <div class="img-container">
+                <img src="Productos\mint600.jpg" alt="Molde integral chico" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Pan de molde integral chico</h3>
+            <h4>$230</h4>
+        </article>
+        <!---------PRODUCT--------->
+        <!---------PRODUCT--------->
+        <article class="product">
+            <div class="img-container">
+                <img src="Productos\centeno.jpg" alt="Molde centeno" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa shopping-cart"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+            <h3>Pan de molde de centeno</h3>
+            <h4>$420</h4>
+        </article>
+        <!---------PRODUCT--------->

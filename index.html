@@ -1,105 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4c94bd7663.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4c94bd7663.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Negro Holandes | Casa de Pan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!---------NAV--------->
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!---------NAV--------->
     <nav class="navbar">
-        <div class="navbar-center">
-            <span>
-                <i class="fas fa-bars"></i>
-            </span>
-            <img src="fotos\NH.png" alt="Negro Holandes Casa de Pan">
-            <div class="cart-btn">
-                <span class="nav-icon">
-                    <i class="fas fa-cart-plus"></i>
-                </span>
-                <div class="cart-items">0</div>
-            </div>
+      <div class="navbar-center">
+        <span>
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="fotos\NH.png" alt="Negro Holandes Casa de Pan" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
         </div>
+      </div>
     </nav>
-
-<!---------NAV--------->
-<!---------BANNER--------->
-
-<header class="hero">
-    <div class="banner">
+    <!---------NAV--------->
+    <!---------BANNER--------->
+    <header class="hero">
+      <div class="banner">
         <h1 class="banner-title">Producimos lo que vendemos</h1>
         <button class="banner-btn">Comprar</button>
-    </div>
-</header>
-
-<!---------BANNER--------->
-<!---------PRODUCTS--------->
-
-<section class="products">
-    <div class="section-title">
+      </div>
+    </header>
+    <!---------BANNER--------->
+    <!---------PRODUCTS--------->
+    <section class="products">
+      <div class="section-title">
         <h2>Productos</h2>
+      </div>
+      <div class="products-center"></div>
+    </section>
+    <!---------PRODUCTS--------->
+    <!---------CART--------->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Su Carrito</h2>
+        <div class="cart-content">
+          <!------CART ITEM------>
+          <div class="cart-item">
+            <img src="./Productos/mint.jpg" alt="producto" />
+            <div>
+              <h4>Pan de molde integral</h4>
+              <h5>$360</h5>
+              <span class="remove-item">Eliminar</span>
+            </div>
+            <div>
+              <i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <!------CART ITEM------>
+        </div>
+        <div class="cart-footer">
+          <h3>Total: $ <span class="cart-total">360</span></h3>
+          <button class="clear-cart banner-btn">Vaciar carrito</button>
+        </div>
+      </div>
     </div>
-    <div class="products-center">
-        <!---------PRODUCT--------->
-        <article class="product">
-            <div class="img-container">
-                <img src="Productos\mint.jpg" alt="Molde integral" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa shopping-cart"></i>
-                    Añadir al carrito
-                </button>
-            </div>
-            <h3>Pan de molde integral</h3>
-            <h4>$360</h4>
-        </article>
-        <!---------PRODUCT--------->
-        <!---------PRODUCT--------->
-        <article class="product">
-            <div class="img-container">
-                <img src="Productos\mbl.jpg" alt="Molde blanco" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa shopping-cart"></i>
-                    Añadir al carrito
-                </button>
-            </div>
-            <h3>Pan de molde blanco</h3>
-            <h4>$270</h4>
-        </article>
-        <!---------PRODUCT--------->
-        <!---------PRODUCT--------->
-        <article class="product">
-            <div class="img-container">
-                <img src="Productos\mint600.jpg" alt="Molde integral chico" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa shopping-cart"></i>
-                    Añadir al carrito
-                </button>
-            </div>
-            <h3>Pan de molde integral chico</h3>
-            <h4>$230</h4>
-        </article>
-        <!---------PRODUCT--------->
-        <!---------PRODUCT--------->
-        <article class="product">
-            <div class="img-container">
-                <img src="Productos\centeno.jpg" alt="Molde centeno" class="product-img">
-                <button class="bag-btn" data-id="1">
-                    <i class="fas fa shopping-cart"></i>
-                    Añadir al carrito
-                </button>
-            </div>
-            <h3>Pan de molde de centeno</h3>
-            <h4>$420</h4>
-        </article>
-        <!---------PRODUCT--------->
-    </div>
-</section>
-
-<!---------PRODUCTS--------->
-
-</body>
+    <!---------CART--------->
+    <!---------CONTENTFUL--------->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!---------CONTENTFUL--------->
+    <!---------APP.JS--------->
+    <script src="app.js"></script>
+    <!---------APP.JS--------->
+  </body>
 </html>
