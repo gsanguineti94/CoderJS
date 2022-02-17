@@ -47,7 +47,7 @@ class Products{
 class UI{
     displayProducts(products){
         let result = "";
-        products.array.forEach(product => {
+        products.forEach(product => {
             result +=`
                     <!---------PRODUCT--------->
         <article class="product">
@@ -74,7 +74,9 @@ class UI{
 
 //local storage
 class Storage{
-
+  static saveProducts(products){
+    localStorage.setItem("products",JSON.stringify(products));
+  }
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -82,5 +84,8 @@ const ui = new UI();
 const products = new Products();
 
 //get all products
-products.getProducts().then(products => ui.displayProducts(products))
+products.getProducts().then(products => {
+  ui.displayProducts(products)
+  Storage.saveProducts(products)
+});
 });
