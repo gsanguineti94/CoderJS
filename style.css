@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,8 +33,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #baddae;
   z-index: 1;
 }
@@ -47,11 +47,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 1.5rem;
 }
 
@@ -59,12 +59,12 @@ body {
   font-size: 1.5rem;
 }
 
-.boton-carrito {
+.cart-btn {
   position: relative;
   cursor: pointer;
 }
 
-.items-carrito {
+.cart-items {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -83,11 +83,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .banner {
@@ -142,8 +142,8 @@ body {
   max-width: 1170px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  -ms-grid-columns: (minmax(260px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
 }
@@ -166,7 +166,7 @@ body {
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   -webkit-transform: translateX(101%);
-          transform: translateX(101%);
+  transform: translateX(101%);
   cursor: pointer;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .img-container:hover .bag-btn {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .product-img {
@@ -238,12 +238,12 @@ body {
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .showCart {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .transparentBcg {
@@ -274,10 +274,10 @@ body {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-grid-columns: auto 1fr auto;
-      grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
 }
