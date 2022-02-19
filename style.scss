@@ -1,17 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap);
 
-$title-font: "Amatic SC";
-$body-font: "Open Sans";
-
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #cff5c1;
   --mainBkrnd: #cff5c1;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.5s linear;
 }
+
+$title-font: "Amatic SC";
+$body-font: "Open Sans";
+
 * {
   margin: 0;
   padding: 0;
@@ -45,11 +46,11 @@ body {
 .nav-icon {
   font-size: 1.5rem;
 }
-.boton-carrito {
+.cart-btn {
   position: relative;
   cursor: pointer;
 }
-.items-carrito {
+.cart-items {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -58,6 +59,25 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
+/* ---------- NAVBAR MENU ---------- */
+.nav-menu{
+  color: var(--mainBlack);
+  background-color: #baddae;
+  z-index: 4;
+  /*display: none;*/
+  list-style-type: none;
+  font-family: $title-font
+}
+
+li{
+  cursor: pointer;
+}
+
+.burger{
+  cursor: pointer;
+}
+
+/* ---------- NAVBAR MENU ---------- */
 /* --------------- NAVBAR ---------------- */
 /* --------------- BANNER ---------------- */
 .hero {
@@ -92,7 +112,6 @@ body {
 }
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
 }
 /* --------------- BANNER ---------------- */
 /* --------------- PRODUCTOS ---------------- */
@@ -202,6 +221,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+  .nav-menu{
     width: 30vw;
     min-width: 450px;
   }

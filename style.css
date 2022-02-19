@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap);
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #cff5c1;
   --mainBkrnd: #cff5c1;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -33,8 +33,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #baddae;
   z-index: 1;
 }
@@ -47,11 +47,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 1.5rem;
 }
 
@@ -74,6 +74,25 @@ body {
   color: var(--mainWhite);
 }
 
+/* ---------- NAVBAR MENU ---------- */
+.nav-menu {
+  color: var(--mainBlack);
+  background-color: #baddae;
+  z-index: 4;
+  /*display: none;*/
+  list-style-type: none;
+  font-family: "Amatic SC";
+}
+
+li {
+  cursor: pointer;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+/* ---------- NAVBAR MENU ---------- */
 /* --------------- NAVBAR ---------------- */
 /* --------------- BANNER ---------------- */
 .hero {
@@ -83,11 +102,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner {
@@ -119,7 +138,6 @@ body {
 
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
 }
 
 /* --------------- BANNER ---------------- */
@@ -142,8 +160,8 @@ body {
   max-width: 1170px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(260px, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
 }
@@ -166,7 +184,7 @@ body {
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   -webkit-transform: translateX(101%);
-  transform: translateX(101%);
+          transform: translateX(101%);
   cursor: pointer;
 }
 
@@ -180,7 +198,7 @@ body {
 
 .img-container:hover .bag-btn {
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 .product-img {
@@ -238,12 +256,12 @@ body {
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .showCart {
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 .transparentBcg {
@@ -252,6 +270,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+  .nav-menu {
     width: 30vw;
     min-width: 450px;
   }
@@ -274,10 +296,10 @@ body {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: auto 1fr auto;
-  grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
 }
