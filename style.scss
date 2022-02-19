@@ -64,9 +64,9 @@ body {
   color: var(--mainBlack);
   background-color: #baddae;
   z-index: 4;
-  /*display: none;*/
+  display: none;
   list-style-type: none;
-  font-family: $title-font
+  font-family: $title-font;
 }
 
 li{
@@ -76,7 +76,6 @@ li{
 .burger{
   cursor: pointer;
 }
-
 /* ---------- NAVBAR MENU ---------- */
 /* --------------- NAVBAR ---------------- */
 /* --------------- BANNER ---------------- */
